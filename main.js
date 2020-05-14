@@ -1,12 +1,14 @@
-class ToDoList{
-    constructor(){
-        this.toDos = [];
+class List {
+    constructor() {
+        this.data = [];
     }
+    add(data){
+        this.data.push(data);
+    }
+}
 
-    addToDo(){
-        this.toDos.push('Novo item To Do');
-        console.log(this.toDos);
-    }
+class ToDoList extends List{
+    
 }
 
 const MinhaLista = new ToDoList();
